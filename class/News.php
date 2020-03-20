@@ -2,13 +2,6 @@
 
 class News
 {
-	protected $imei;
-	protected $secret;
-	public function __construct(){
-		$this->imei = md5(time());
-		$this->secret = md5(time());
-	}
-	
 	protected function Request($url, $post = false, $headers = false)
     {
         $ch = curl_init();
